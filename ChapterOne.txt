@@ -17,4 +17,32 @@ On the other hands, an interpreter does not produce an object program.
 It may translate the source program into an internal intermediate code
 that it can execute more effieciently. 
 
+Writing Compilers and Interpreters
+The goal of this book is to teach the fundamentals in an understandable way about the compilers and interpreters. 
+
+Let's take an high-level overview of what compilers and interpreters are made of.
+
+Front End 
+  - read the source program
+  : scanner --- parser
+
+  - Parser object knows the syntax of the source language
+  : Parser controls the translation process
+
+  - Whenever the parser needs more of the source program to work on, it sends Get message to the scanner object.
+
+  - Scanner reads the source program and break it apart into a sequence of tokens
+    numbers, identifiers, operators, and so on. 
+    It returns the next token to the parser in response to each Get message. 
+  - After parser has read the entire source program, the parser sends a Go message to the executor object
+    in the back end to tell it run the program 
+ 
+Back End
+  - Executes the program
+ : Executor 
+
+
+OOP Meaning of Sending a message
+  - Sending a message, in OOP, generally measn calling an object's function.
+  - In C++ calling member function.
 
