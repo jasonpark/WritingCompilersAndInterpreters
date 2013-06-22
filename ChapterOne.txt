@@ -1,0 +1,20 @@
+
+Chapter 1 Introduction (2013. 06. 23)
+ 
+What are Compilers adn Interpreters?
+
+The main purpose of a compiler and interpreters is to translate
+a program written in a high-level programming language into
+a form that a computer can understand in order to execute the program. 
+
+A compiler translates a program into a low-level object language.
+The compiler translates each source file into an object file.
+
+linker compines the objects files into the object program. 
+You can load it into the computer's memory and then execute it. 
+
+On the other hands, an interpreter does not produce an object program. 
+It may translate the source program into an internal intermediate code
+that it can execute more effieciently. 
+
+
